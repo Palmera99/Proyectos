@@ -14,6 +14,8 @@
 
     echo $palabra[5];
 
+    //nueva linea
+
 
     ?>
 </body>
