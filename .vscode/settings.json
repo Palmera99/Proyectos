@@ -1,0 +1,8 @@
+{
+    "livePreview.defaultPreviewPath": "/semana2pw/ejemplosemana2.html",
+    "python.analysis.typeCheckingMode": "basic",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none"
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- codigo tipo rejilla
+         <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+       </div>
+       <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+       <div class="col-*-*"></div>
+       </div>
+       <div class="row">
+       </div> -->
+
+    <div class="row">
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-4">.col-sm-4</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">.col-sm-2</div>
+      <div class="col-sm-10">.col-sm-10</div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Componente Modal</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Usted está a punto de salir de la aplicación</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              Guardar cambios
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+            <!-- Agrega más encabezados si es necesario -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+            <!-- Agrega más datos si es necesario -->
+          </tr>
+          <!-- Agrega más filas de datos si es necesario -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Región 1</h5>
+              <p class="card-text">Información de la región 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Región 2</h5>
+              <p class="card-text">Información de la región 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Región 3</h5>
+              <p class="card-text">Información de la región 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#mymodal"
+    >
+      abrir modal
+    </button>
+    <div class="modal" id="mymodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Encabezado</h5>
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            aqui va el contenido
+            <div class="form-group">
+              <label for="fecha">Fecha:</label>
+              <input type="date" class="form-control" id="fecha" name="fecha" />
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button class="btn btn-warning" data-bs-dismiss="modal">
+              Actualizar
+            </button>
+            <button class="btn btn-success" data-bs-dismiss="modal">
+              Compartir
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="fecha">Fecha:</label>
+      <input type="date" class="form-control" id="fecha" name="fecha" />
+    </div>
+
+    <!-- Botón para abrir el cuadro de diálogo -->
+    <button class="btn btn-primary" data-toggle="modal" data-target="#dialogo">
+      Mostrar Cuadro de Diálogo
+    </button>
+
+    <!-- Cuadro de diálogo -->
+    <div
+      class="modal fade"
+      id="dialogo"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="dialogoTitulo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- Cabecera del cuadro de diálogo -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="dialogoTitulo">Última actualización</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Cerrar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- Cuerpo del cuadro de diálogo -->
+          <div class="modal-body">
+            <p>
+              Fecha de la última actualización:
+              <span id="fechaActualizacion"></span>
+            </p>
+          </div>
+          <!-- Pie del cuadro de diálogo -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary">Aceptar</button>
+            <button type="button" class="btn btn-danger">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Obtener la fecha actual y mostrarla en el cuadro de diálogo
+      var fechaActualizacion = new Date().toLocaleDateString("es-ES");
+      document.getElementById("fechaActualizacion").textContent =
+        fechaActualizacion;
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

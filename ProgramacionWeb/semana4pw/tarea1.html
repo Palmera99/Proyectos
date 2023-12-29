@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Notas de Quimica</h1>
+    <h3>Ingresa las notas</h3>
+    <label for="prueba">Notas de prueba (60%)</label>
+    <input type="text" name="prueba" id="prueba" />
+    <br />
+    <label for="grupo">Notas de grupos (40%)</label>
+    <input type="text" name="grupo" id="grupo" /><br />
+    <button onclick="myfuncion()">Enviar</button>
+    <p id="texto"></p>
+
+    <script>
+      function myfuncion(prueba, grupo) {
+        prueba = parseFloat(document.getElementById("prueba").value);
+        grupo = parseFloat(document.getElementById("grupo").value);
+        let notaprueba = prueba * 0.6;
+        let notagrupo = grupo * 0.4;
+        let notafinal = (notaprueba + notagrupo).toFixed(1);
+
+        if (notafinal >= 5) {
+          document.getElementById("texto").innerHTML =
+            "Estas aprobado tu nota es " + notafinal;
+        } else {
+          document.getElementById("texto").innerHTML =
+            "Estas reprobado tu nota es " + notafinal;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function mifuncion() {
+        var num, factorial, texto;
+        num = document.getElementById("numero").value;
+        factorial = 1;
+        for (let i = 1; i <= parseFloat(num); i++) {
+          factorial = factorial * i;
+        }
+        texto = factorial;
+        document.getElementById("html").innerHTML = texto;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>ingresa un numero</h2>
+    <label for="numero">ingresa un numero</label>
+    <input type="text" name="numero" id="numero" />
+    <button onclick="mifuncion()">Enviar</button>
+    <br />
+    <p id="html"></p>
+  </body>
+</html>

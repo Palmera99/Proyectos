@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="seleccion" id="seleccion">
+      <option value="default">--Elije una Tabla--</option>
+      <option value="tabla1">Tabla del 1</option>
+      <option value="tabla2">Tabla del 2</option>
+      <option value="tabla3">Tabla del 3</option>
+      <option value="tabla4">Tabla del 4</option>
+      <option value="tabla5">Tabla del 5</option>
+    </select>
+    <button onclick="generar_tabla()">Generar Tabla</button>
+    <p id="texto"></p>
+
+    <script>
+      function generar_tabla() {
+        let select = document.getElementById("seleccion").value;
+        switch (select) {
+          case "tabla1":
+            for (let index = 1; index < 11; index++) {
+              document.write(1 + "x" + index + "=" + 1 * index + "<br>");
+              const imgButtonCar = document.createElement("a");
+              imgButtonCar.setAttribute("href", "./icons/bt_add_to_cart.svg");
+            }
+            break;
+          case "tabla2":
+            for (let index = 1; index < 11; index++) {
+              document.write(2 + "x" + index + "=" + 2 * index + "<br>");
+            }
+            break;
+          case "tabla3":
+            for (let index = 1; index < 11; index++) {
+              document.write(3 + "x" + index + "=" + 3 * index + "<br>");
+            }
+            break;
+          case "tabla4":
+            for (let index = 1; index < 11; index++) {
+              document.write(4 + "x" + index + "=" + 4 * index + "<br>");
+            }
+            break;
+          case "tabla5":
+            for (let index = 1; index < 11; index++) {
+              document.write(5 + "x" + index + "=" + 5 * index + "<br>");
+            }
+            break;
+
+          default:
+            document.getElementById("texto").innerHTML =
+              "no selecciono ninguna opcion";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

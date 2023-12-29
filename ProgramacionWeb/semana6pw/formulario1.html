@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="conexion.php" method="post">
+      <table>
+        <tr>
+          <td><label for="cod">Codigo</label></td>
+          <td><input type="text" name="cod" /></td>
+        </tr>
+        <tr>
+          <td><label for="nombre">Nombre</label></td>
+          <td><input type="text" name="nombre" /></td>
+        </tr>
+        <tr>
+          <td><label for="duracion">Duracion (Horas)</label></td>
+          <td><input type="text" name="duracion" /></td>
+        </tr>
+        <tr>
+          <td><label for="fechainicio">Fecha Inicio</label></td>
+          <td><input type="date" name="fechainicio" /></td>
+        </tr>
+        <tr>
+          <td><label for="fechafin">Fecha Termino</label></td>
+          <td><input type="date" name="fechafin" /></td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="enviar" value="Enviar" /></td>
+          <td><input type="submit" name="consultar" value="Consultar" /></td>
+          <td><input type="submit" name="modificar" value="Modificar" /></td>
+          <td><input type="reset" value="Limpiar" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

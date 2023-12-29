@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      main {
+        background: #d9d7d5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      div {
+        background: #767775;
+        flex-basis: 100%;
+        height: 100px;
+        margin-bottom: 0.5rem;
+      }
+      @media (min-width: 600px) {
+        main {
+          flex-wrap: nowrap;
+        }
+        div {
+          flex-basis: 33%;
+        }
+      }
+      .responsiveBorderContainer1 {
+         width: 100%;
+        height: 100px;
+        background: rgb(224,127,122)
+        }
+        .responsiveBorderContainer1 .responsiveDiv {
+        float: left;
+        width: 30.33%;
+        height: 80px;
+        background: rgb(109,112,127);
+        margin: 10px 1.5%
+        }
+    </style>
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+
+
+
+    <picture>
+        <!-- Imagen de alta resolución para pantallas de alta densidad de píxeles -->
+        <source srcset="aaaa.jpg" media="(min-width: 1200px)">
+    
+        <!-- Imagen para pantallas medianas -->
+        <source srcset="OIP.jpg" media="(min-width: 600px)">
+    
+        <!-- Imagen para pantallas pequeñas (móviles) -->
+        <source srcset="images.jpg" media="(max-width: 599px)">
+    
+        <!-- Imagen predeterminada para navegadores que no soportan la etiqueta <picture> -->
+        <img src="ajpsdasdas.jpg" alt="Plato típico">
+    
+      </picture>
+
+      <div class="responsiveBorderContainer1">
+        <div class="responsiveDiv"></div>
+        <div class="responsiveDiv"></div>
+        <div class="responsiveDiv"></div>
+        </div>
+        
+
+        
+  </body>
+</html>

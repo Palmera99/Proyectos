@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tarea 2</title>
+    <style>
+      body {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+        text-align: justify;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.4);
+        margin-top: 2rem;
+        padding: 2rem;
+      }
+      .centrar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      h1 {
+        text-align: center;
+        border: 1px solid black;
+        background-color: beige;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Caldillo de Congrio</h1>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">
+                El caldillo de congrio es un plato muy famoso en los mercados
+                populares de Chile, es uno de los preferidos y más ricos, en
+                especial para invierno, ya que lo sirven bien calentito en
+                platos de barro para que la temperatura perdure por más tiempo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">
+                Además, este caldilloes un plato rico en proteínas, hierro y
+                potasio que puedes acompañar con una copa de tu vino blanco
+                favorito.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Norte de Chile</h5>
+              <p class="card-text">
+                Este platillo se consume en casi todas las zonas del pais pero
+                su foco se centra en las zonas costeras y en el norte de Chile
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="ingredientes">
+        <h2>Ingredientes</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>4</th>
+                <th>2</th>
+                <th>100</th>
+                <th>2</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>cebolla</td>
+                <td>papas</td>
+                <td>zanahoria</td>
+                <td>aji</td>
+                <td>pimenton</td>
+                <td>rodajas de congrio</td>
+                <td>tomates</td>
+                <td>mililitros de vino blanco</td>
+                <td>dientes de ajo</td>
+                <td>cucharadita de oregano</td>
+                <td>cucharadita aji color</td>
+                <td>cucharadita de sal y pimienta</td>
+                <td>rama de perejil</td>
+                <td>chorro de ketchup</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <div class="centrar">
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#mymodal"
+        >
+          Ultima Actualizacion
+        </button>
+        <div class="modal" id="mymodal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Actualizacion de la Pagina</h5>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body">
+                Ultima Actualizacion: <br />
+                Domingo 18 de Junio 15:00
+              </div>
+
+              <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">
+                  cerrar
+                </button>
+                <button class="btn btn-warning" data-bs-dismiss="modal">
+                  Actualizar
+                </button>
+                <button class="btn btn-success" data-bs-dismiss="modal">
+                  Compartir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registro de libros</title>
+  </head>
+  <body>
+    <br /><br />
+    <form name="formulario" method="post" action="LibroBD.php">
+      <table border="2" align="center">
+        <caption>
+          Biblioteca
+        </caption>
+        <tr>
+          <td>Título</td>
+          <td><input type="text" name="titulo" size="50" /></td>
+        </tr>
+        <tr>
+          <td>Autores</td>
+          <td><input type="text" name="autores" size="50" /></td>
+        </tr>
+        <tr>
+          <td>Editorial</td>
+          <td><input type="text" name="editorial" size="50" /></td>
+        </tr>
+        <tr>
+          <td>Año</td>
+          <td><input type="number" name="anio" size="8" /></td>
+        </tr>
+        <tr>
+          <td>Género</td>
+          <td><input type="text" name="genero" size="30" /></td>
+        </tr>
+        <tr>
+          <td>ISBN</td>
+          <td><input type="text" name="isbn" size="30" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" name="ingresar" value="Ingresar" />
+            <input type="submit" name="modificar" value="Modificar" />
+            <input type="submit" name="consultar" value="Consultar" />
+            <input type="reset" name="limpiar" value="Cancelar" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

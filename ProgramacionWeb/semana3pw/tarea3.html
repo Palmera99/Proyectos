@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let respuesta;
+      function mifuncion() {
+        respuesta = "Usted es: ";
+        Genero = document.getElementById("genero").value;
+        if (Genero == "m") {
+          document.getElementById("texto").innerHTML = respuesta + "Hombre";
+        } else if (Genero == "f") {
+          document.getElementById("texto").innerHTML = respuesta + "Mujer";
+        } else {
+          document.getElementById("texto").innerHTML =
+            "No puso los caracteres solicitados";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Genero</h2>
+    <p>Elija un Genero</p>
+    <p>Ingrese su genero con una m para masculino o f para femenino</p>
+    <input type="text" name="genero" id="genero" />
+    <button onclick="mifuncion()">Enviar</button>
+    <p id="texto"></p>
+  </body>
+</html>

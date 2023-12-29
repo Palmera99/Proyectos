@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="wclassth=device-wclassth, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="opcion" id="opcion" onchange="mifuncion()">
+      <option value="default">elija una opcion</option>
+      <option value="tabla1">Tabla del 1</option>
+      <option value="tabla2">Tabla del 2</option>
+      <option value="tabla3">Tabla del 3</option>
+      <option value="tabla4">Tabla del 4</option>
+      <option value="tabla5">Tabla del 5</option>
+    </select>
+
+    <table>
+      <tr>
+        <th colspan="3" id="titulo"></th>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>1</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>2</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>3</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>4</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>5</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>6</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>7</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>8</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td class="numero"></td>
+        <td>9</td>
+        <td class="resultado"></td>
+      </tr>
+      <tr>
+        <td id="numero"></td>
+        <td>10</td>
+        <td class="resultado"></td>
+      </tr>
+    </table>
+
+    <script>
+      function myfuncion() {
+        let tablas = document.getElementById("opcion").value;
+
+        switch (tablas) {
+          case "tabla1":
+            document.getElementById("titulo").innerHTML = 56;
+            break;
+
+          default:
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
